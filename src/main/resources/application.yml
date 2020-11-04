@@ -1,0 +1,28 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/team_manager?useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    user:
+      name: admin
+      password: admin
+task:
+  status:
+    done: DONE
+    progress: IN PROGRESS
+mesasges:
+  noteam: Team not found!
+  notask: Task not found!
+  addteam: Team successfully added!
+  addtask: Task successfully added!
+  modifytask: Task successfully modified!
+  cleartasks: All Tasks successfully cleared!
+  cleartask: Task succssfully cleared!
+  clearteam: Team successfully cleared!
+  clearteams: All Teams successfully cleared!
